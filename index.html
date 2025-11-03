@@ -58,14 +58,24 @@
             transition: background-color 0.3s ease, color 0.3s ease;
         }
 
-        /* Hero gradient */
+        /* Light mode hero gradient */
         .hero-gradient {
-            background: linear-gradient(135deg, theme('colors.primary-dark') 0%, theme('colors.primary') 100%);
+            background: linear-gradient(135deg, #1e88e5 0%, #00acc1 100%);
         }
         
         /* Dark mode hero gradient */
         .dark .hero-gradient {
              background: linear-gradient(135deg, theme('colors.dark-bg') 0%, theme('colors.primary-dark') 100%);
+        }
+
+        /* Light mode text color */
+        body {
+            color: theme('colors.dark-text');
+        }
+
+        /* Dark mode text color */
+        .dark body {
+            color: theme('colors.light-text');
         }
 
         /* General animated element class */
@@ -110,7 +120,7 @@
             <div class="flex h-20 items-center justify-between">
                 <!-- Logo -->
                 <a href="#" class="flex flex-shrink-0 items-center gap-2">
-                    <img class="h-12 w-auto bg-white rounded-md p-1" 
+                    <img class="h-12 w-auto rounded-md p-1"
                          src="https://uploads.onecompiler.io/43y3by72c/4428darze/1000007296.png" 
                          alt="Kaif Survey & Consulting Logo"
                          onerror="this.onerror=null; this.src='https://placehold.co/150x50/0d47a1/white?text=KSC';">
